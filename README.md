@@ -6,6 +6,7 @@ The server file is: server.js. You can start it using "node server.js", it will 
 Or you can navigate to that address manually if you like it.
 
 Default username: admin
+
 Default password: admin
 
 <<<-------------------------------->>>
