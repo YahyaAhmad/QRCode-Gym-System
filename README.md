@@ -1,6 +1,6 @@
 # QRCode-Gym-System
 
-This project uses Node JS. You must install node js first before starting it.
+This project uses Node JS as backend, Javascript and JQuery as frontend. You must install node js first before starting it.
 
 The server file is: server.js. You can start it using "node server.js", it will open a google chrome tab with the address "localhost:3000".
 Or you can navigate to that address manually if you like it.
