@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	
+	<script type="text/javascript" src="./js_lib/jquery.js"></script>
+	<script type="text/javascript" src="./js/functions.js"></script>
+	<script type="text/javascript" src="./js_lib/bootstrap.js"></script>
+	<script type="text/javascript" src="./js_lib/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js_lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script type="text/javascript" src="./js_lib/instascan.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="./js_lib/pouchdb.min.js"></script>
+	<script type="text/javascript" src="./js_lib/pouchdb.quick-search.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
+	<script type="text/javascript" src="./js/database.js"></script>
+	<script src="./js/index.js"></script>
+	
+
+	<title>Gym System</title>
+</head>
+<body >
+		<div id='shadowBox' class="shadowBox display_hide escapable">
+			<div class="center">
+
+				<div class="popup">
+				<form action="">
+					<table class="formTable">
+					<tr>
+						<td><label>Username</label></td>
+						<td><input id='user' onkeydown="proceed('index');" type="text"></td>
+					</tr>
+					<tr>
+						<td><label for="">Password</label></td>
+						<td><input onkeydown="proceed('index');" id='pass' type="Password"></td>
+					</tr>
+					<tr>
+						<td><button type="button" onclick="proceed('index');">Login</button></td>
+						<td><div class="loader display_hide"></div></td>
+					</tr>
+				</table>		
+
+				</form>
+
+			</div>	
+		</div>	
+	</div>
+<!-- 	<div class="shadowBox ">
+		<div class="center">
+
+			<div class="popup monthPopup">
+				<table class="addMonthTable">
+					<tr>
+						<td><label  for="">Months</label></td>
+						<td><select id='monthCombo'>
+							  <option value="">1</option>
+							  <option value="">2</option>
+						</select></td>
+					</tr>
+					<tr>
+					<td><button>Submit</button></td>
+					<td></td>
+					</tr>
+				</table>
+			</div>	
+		</div>	
+	</div> -->
+	<div class="navcon">
+	<nav class="my-navbar ">
+		<div class="position"><div onclick="openTab(focusWin);" class="company-name">Gym System</div></div>
+
+
+	</nav>	
+
+	</div>
+
+
+
+	<div class="my-container">
+
+	<div class="tools">
+
+		<div class="toolbox">
+			
+			<div onclick="reload();" class="my-button start"></div>
+			<div onclick="scanner.stop();" class="my-button stop"></div>
+			<div class='my-button admin' onclick='window.open("admin.html", "_blank");'>Control</div>	
+		</div>
+
+
+
+		
+	</div>
+	<div class="tools"><div class="webcam-group">
+		<div class="webcam hidden"><video height="250"  id="preview"></video></div>
+		<div onclick="showCamera(this);" class="showWebcam my-button"><i class="fa fa-angle-down" style="font-size:30px"></i>
+		</div>
+		<div class="console"><div class="console_text" readonly="true">Hello, this is a test...</div></div>
+	</div>
+	
+	</div>
+
+    <script type="text/javascript" src="./js/webcam.js"></script>		
+		
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+
+function openTab(fun){
+	var url = 'https://www.google.com';
+	var a = window.open(url, "Google Page");
+	fun(a);
+}
+
+function focusWin(win){
+	win.focus();
+}
+
+
+
+</script>
